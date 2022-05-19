@@ -14,22 +14,33 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  test('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    const component = fixture.componentInstance;
+    expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'testing-curso-Fernando-Herrera'`, () => {
+  test(`should have as title 'testing-curso-Fernando-Herrera'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('testing-curso-Fernando-Herrera');
+    const component = fixture.componentInstance;
+    expect(component.title).toEqual('testing-curso-Fernando-Herrera');
   });
 
-  it('should render title', () => {
+  test('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const component = fixture.componentInstance;
+    const compiled = fixture.nativeElement as HTMLElement;
+
+    const h1 = compiled.querySelector('h1');
+    expect(h1?.textContent).toContain(component.title);
+  });
+
+  test('debe hacer match con el snapshot', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('testing-curso-Fernando-Herrera app is running!');
-  });
+
+    expect(compiled).toMatchSnapshot();
+  })
 });
