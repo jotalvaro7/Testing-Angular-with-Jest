@@ -98,9 +98,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "testing-curso-Fernando-Herrera"
+  "defaultProject": "testing-curso-Fernando-Herrera",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
