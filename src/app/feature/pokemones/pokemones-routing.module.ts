@@ -8,16 +8,15 @@ const routes: Routes = [
   {
     path: '',
     component: PokemonComponent,
-    children:[
-      {path: 'charizard', component: PokemonCharizardComponent},
-      {path: '', component: PokemonListComponent}
-      
-    ]
-  }
+    children: [
+      { path: 'charizard', component: PokemonCharizardComponent },
+      { path: '', component: PokemonListComponent },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PokemonesRoutingModule { }
+export class PokemonesRoutingModule {}

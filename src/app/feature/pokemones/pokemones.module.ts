@@ -6,18 +6,12 @@ import { PokemonComponent } from './components/pokemon.component';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 import { PokemonCharizardComponent } from './components/pokemon-charizard/pokemon-charizard.component';
 
-
-
 @NgModule({
   declarations: [
-  
     PokemonComponent,
-       PokemonListComponent,
-       PokemonCharizardComponent
+    PokemonListComponent,
+    PokemonCharizardComponent,
   ],
-  imports: [
-    CommonModule,
-    PokemonesRoutingModule
-  ]
+  imports: [CommonModule, PokemonesRoutingModule],
 })
-export class PokemonesModule { }
+export class PokemonesModule {}
