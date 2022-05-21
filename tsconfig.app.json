@@ -3,7 +3,15 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@counter/*": [
+        "src/app/feature/counter/*"
+      ],
+      "@pokemones/*": [
+        "src/app/feature/pokemones/*"
+      ]
+    },
   },
   "files": [
     "src/main.ts",

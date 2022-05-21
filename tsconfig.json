@@ -28,6 +28,9 @@
     "paths": {
       "@counter/*": [
         "src/app/feature/counter/*"
+      ],
+      "@pokemones/*": [
+        "src/app/feature/pokemones/*"
       ]
     },
     "types": [
