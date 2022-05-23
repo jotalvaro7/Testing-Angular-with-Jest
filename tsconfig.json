@@ -31,6 +31,15 @@
       ],
       "@pokemones/*": [
         "src/app/feature/pokemones/*"
+      ],
+      "@father/*": [
+        "src/app/feature/father/*"
+      ],
+      "@father-son/*": [
+        "src/app/feature/father-son/*"
+      ],
+      "@shared/*":[
+        "src/app/shared/*"
       ]
     },
     "types": [
