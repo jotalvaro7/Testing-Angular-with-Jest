@@ -2,11 +2,11 @@
 <code>{{client | json}}</code>
 <br><br>
 
-<button *ngIf="client" class="btn btn-primary">
+<button *ngIf="client" class="btn btn-primary" (click)="onChange(2)">
     Cambiar ID
 </button>
 
-<button *ngIf="client" class="btn btn-outline-danger">
+<button *ngIf="client" class="btn btn-outline-danger" (click)="onDelete()">
     Borrar Cliente
 </button>
 
