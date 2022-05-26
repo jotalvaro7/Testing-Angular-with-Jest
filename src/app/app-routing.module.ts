@@ -6,7 +6,8 @@ const routes: Routes = [
   {path: 'counter', loadChildren: () => import('@counter/counter.module').then(m => m.CounterModule)},
   {path: 'pokemones', loadChildren: () => import('@pokemones/pokemones.module').then(m => m.PokemonesModule)},
   {path: 'father', loadChildren: () => import('@father/father.module').then(m => m.FatherModule)},
-
+  {path: 'counter/:initial', loadChildren: () => import('@counter-route/counter-route.module').then(m => m.CounterRouteModule)},
+  
 ];
 
 @NgModule({

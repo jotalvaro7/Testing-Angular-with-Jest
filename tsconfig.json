@@ -38,6 +38,9 @@
       "@father-son/*": [
         "src/app/feature/father-son/*"
       ],
+      "@counter-route/*": [
+        "src/app/feature/counter-route/*"
+      ],
       "@shared/*":[
         "src/app/shared/*"
       ]
