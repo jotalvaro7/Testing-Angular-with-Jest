@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  angular-app:
+    container_name: angular-app-container
+    image: juliocesarosorio709/angular-app
+    # build:
+    #   context: ./
+    #   dockerfile: ./Dockerfile
+    restart: always
+    ports:
+     - "8000:80"
